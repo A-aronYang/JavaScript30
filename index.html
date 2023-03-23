@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript 30 — Build 30 things with vanilla JS in 30 days with 30 tutorials</title>
+    <link rel="stylesheet" href="static/css/style-JS3.css">
+    <link rel="shortcut icon" type="image/png" href="https://javascript30.com/images/favion-JS3.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header class="hero">
+        <h1>
+            <div class="hero__title"><span class="hashtag">#</span><span class="word">JavaScript</span><span
+                    class="num">30</span></div>
+        </h1>
+        <p class="hero__text"><span class="hl">30</span> 天原生 <span class="hl">JS</span> 代码挑战</p>
+        <p class="hero__text hero__text--small">用 <span class="hl">30</span> 个教程在 <span class="hl">30</span>
+            天内制作 <span class="hl">30</span> 个小项目</p>
+    </header>
+    <div class="topographic">
+        <section class="section">
+            <div class="section__inner">
+                <div class="signup">
+                    <div class="signup__step signup__step--1">
+                        <div class="signup__section signup__section--price">
+                            <div class="price"><span class="price__value--currency">￥</span><span
+                                    class="price__value--dollars">0</span><span class="price__value--cents">00</span>
+                            </div><strong>免费</strong>
+                        </div>
+                        <div class="signup__section signup__section--email">
+                            <h3><strong>从今天起就开始挑战吧！</strong></h3>
+                            <p class="error-display" style="display:none;"></p>
+                            <p>JavaScirpt30 是 Wes Bos 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯
+                                JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。</p>
+                        </div>
+                        <div class="signup__section signup__section--info">
+                            <ul class="list">
+                                <li class="list__item--bold">相关地址</li>
+                                <li class="list__item">
+                                    <img src="./static/image/github.png" alt="">
+                                    <a href="https://github.com/wesbos/JavaScript30" target="_blank">
+                                        Wes Bos JS30
+                                    </a>
+                                </li>
+                                <li class="list__item">
+                                    <img src="./static/image/yuquelogo.png" alt="">
+                                    <a href="https://www.yuque.com/javascript30" target="_blank">
+                                        语雀学习小组
+                                    </a>
+                                </li>
+                                <li class="list__item">
+                                    <img src="./static/image/bilibili.png" alt="">
+                                    <a href="https://www.bilibili.com/video/BV1za4y1Y7Ma" target="_blank">
+                                        英文视频地址
+                                    </a>
+                                </li>
+                                <li class="list__item">
+                                    <img src="./static/image/bilibili.png" alt="">
+                                    <a href="https://www.bilibili.com/video/BV1La4y1Y75p" target="_blank">
+                                        中文导览视频地址
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="section section__videos">
+        <div class="section__inner">
+            <h2 class="title title__center">30 天<span class="hl">×</span>30 个视频</h2>
+            <ul class="video-list">
+                <li class="video-list__item">
+                    <div class="video-list__image">
+                        <a href="./static//pages/day01 Drum Kit/index.html">
+                            <img src="static/picture/small0.png" alt="JavaScript Drum Kit">
+                        </a>
+                    </div>
+                    <h3 class="video-list__title">JavaScript 打击鼓</h3><span class="video-list__number">Day 1</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--1">DOM &amp; Interface</li>
+                        <li class="tags__item tags__item--3">Friends with CSS</li>
+                        <li class="tags__item tags__item--5">Audio + Video</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image">
+                        <a href="./static//pages//day02 JS and CSS Clock/index.html">
+                            <img src="static/picture/small01.gif" alt="CSS + JS Clock">
+                        </a></div>
+                    <h3 class="video-list__title">CSS + JS 时钟</h3><span class="video-list__number">Day 2</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--2">Fundamentals</li>
+                        <li class="tags__item tags__item--3">Friends with CSS</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small2.jpg"
+                            alt="Playing with CSS Variables and JS"></div>
+                    <h3 class="video-list__title">控制 CSS 变量 and JS</h3><span class="video-list__number">Day 3</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--3">Friends with CSS</li>
+                        <li class="tags__item tags__item--6">Fun + Experimental</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small3.jpg" alt="Array Cardio Day 1"></div>
+                    <h3 class="video-list__title">数组案例 Day 1</h3><span class="video-list__number">Day 4</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--2">Fundamentals</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small4.jpg" alt="Flex Panels Image Gallery">
+                    </div>
+                    <h3 class="video-list__title">Flex 图片画廊</h3><span class="video-list__number">Day
+                        5</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--3">Friends with CSS</li>
+                        <li class="tags__item tags__item--1">DOM &amp; Interface</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small5.jpg" alt="Ajax Type Ahead"></div>
+                    <h3 class="video-list__title">Ajax 头部搜索</h3><span class="video-list__number">Day 6</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--1">DOM &amp; Interface</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small6.jpg" alt="Array Cardio Day 2"></div>
+                    <h3 class="video-list__title">数组案例 Day 2</h3><span class="video-list__number">Day 7</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--2">Fundamentals</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small7.jpg" alt="Fun with HTML5 Canvas">
+                    </div>
+                    <h3 class="video-list__title">Canvas 画板</h3><span class="video-list__number">Day
+                        8</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--6">Fun + Experimental</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small8.jpg"
+                            alt="14 Must Know Dev Tools Tricks"></div>
+                    <h3 class="video-list__title">14 个必须知道的 Dev Tools 调试技巧</h3><span class="video-list__number">Day
+                        9</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--2">Fundamentals</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small9.jpg"
+                            alt="Hold Shift to Check Multiple Checkboxes"></div>
+                    <h3 class="video-list__title">按住 Shift 多选 Checkbox</h3><span class="video-list__number">Day
+                        10</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--1">DOM &amp; Interface</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small10.jpg"
+                            alt="Custom HTML5 Video Player"></div>
+                    <h3 class="video-list__title">自定义 HTML5 视频播放器</h3><span class="video-list__number">Day
+                        11</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--5">Audio + Video</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small11.jpg"
+                            alt="Key Sequence Detection (KONAMI CODE)"></div>
+                    <h3 class="video-list__title">密钥检测</h3><span class="video-list__number">Day 12</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--2">Fundamentals</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small12.jpg" alt="Slide In on Scroll"></div>
+                    <h3 class="video-list__title">滚动滑入效果</h3><span class="video-list__number">Day 13</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--1">DOM &amp; Interface</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small13.jpg"
+                            alt="Object and Arrays - Reference VS Copy"></div>
+                    <h3 class="video-list__title">Object 和 Arrays 的复制和引用</h3><span class="video-list__number">Day
+                        14</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--2">Fundamentals</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small14.jpg"
+                            alt="LocalStorage and Event Delegation"></div>
+                    <h3 class="video-list__title">本地存储和事件委托</h3><span class="video-list__number">Day 15</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--2">Fundamentals</li>
+                        <li class="tags__item tags__item--1">DOM &amp; Interface</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small15.jpg"
+                            alt="CSS Text Shadow Mouse Move Effect"></div>
+                    <h3 class="video-list__title">CSS文本阴影鼠标移动效果</h3><span class="video-list__number">Day 16</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--1">DOM &amp; Interface</li>
+                        <li class="tags__item tags__item--3">Friends with CSS</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small16.jpg"
+                            alt="Sorting Band Names without articles"></div>
+                    <h3 class="video-list__title">乐队名称排序</h3><span class="video-list__number">Day 17</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--2">Fundamentals</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small17.jpg"
+                            alt="Tally String Times with Reduce"></div>
+                    <h3 class="video-list__title">对字符串时间求和</h3><span class="video-list__number">Day 18</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--2">Fundamentals</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small18.jpg" alt="Unreal Webcam Fun"></div>
+                    <h3 class="video-list__title">虚幻网络摄像头乐趣</h3><span class="video-list__number">Day 19</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--4">Hardware Access</li>
+                        <li class="tags__item tags__item--6">Fun + Experimental</li>
+                        <li class="tags__item tags__item--5">Audio + Video</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small19.jpg"
+                            alt="Native Speech Recognition"></div>
+                    <h3 class="video-list__title">本地语音识别</h3><span class="video-list__number">Day
+                        20</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--5">Audio + Video</li>
+                        <li class="tags__item tags__item--6">Fun + Experimental</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small20.jpg"
+                            alt="Geolocation based Speedometer and Compass"></div>
+                    <h3 class="video-list__title">基于地理位置的速度计和指南针</h3><span class="video-list__number">Day 21</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--4">Hardware Access</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small21.jpg" alt="Follow Along Links"></div>
+                    <h3 class="video-list__title">导航跟随</h3><span class="video-list__number">Day 22</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--1">DOM &amp; Interface</li>
+                        <li class="tags__item tags__item--3">Friends with CSS</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small22.jpg" alt="Speech Synthesis"></div>
+                    <h3 class="video-list__title">语音合成</h3><span class="video-list__number">Day 23</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--6">Fun + Experimental</li>
+                        <li class="tags__item tags__item--5">Audio + Video</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small23.jpg" alt="Sticky Nav"></div>
+                    <h3 class="video-list__title">吸附导航</h3><span class="video-list__number">Day 24</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--1">DOM &amp; Interface</li>
+                        <li class="tags__item tags__item--2">Fundamentals</li>
+                        <li class="tags__item tags__item--3">Friends with CSS</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small24.jpg"
+                            alt="Event Capture, Propagation, Bubbling and Once"></div>
+                    <h3 class="video-list__title">事件捕获，传播，冒泡</h3><span class="video-list__number">Day 25</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--1">DOM &amp; Interface</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small25.jpg"
+                            alt="Stripe Follow Along Dropdown"></div>
+                    <h3 class="video-list__title">条纹跟随下拉菜单</h3><span class="video-list__number">Day
+                        26</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--1">DOM &amp; Interface</li>
+                        <li class="tags__item tags__item--6">Fun + Experimental</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small26.jpg" alt="Click and Drag to Scroll">
+                    </div>
+                    <h3 class="video-list__title">点击并拖动以滚动</h3><span class="video-list__number">Day
+                        27</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--1">DOM &amp; Interface</li>
+                        <li class="tags__item tags__item--2">Fundamentals</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small27.jpg"
+                            alt="Video Speed Controller UI"></div>
+                    <h3 class="video-list__title">视频速度控制器界面</h3><span class="video-list__number">Day
+                        28</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--5">Audio + Video</li>
+                        <li class="tags__item tags__item--6">Fun + Experimental</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small28.jpg" alt="Countdown Clock"></div>
+                    <h3 class="video-list__title">倒计时钟</h3><span class="video-list__number">Day 29</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--2">Fundamentals</li>
+                        <li class="tags__item tags__item--3">Friends with CSS</li>
+                    </ul>
+                </li>
+                <li class="video-list__item">
+                    <div class="video-list__image"><img src="static/picture/small29.jpg" alt="Whack A Mole Game"></div>
+                    <h3 class="video-list__title">打鼹鼠游戏</h3><span class="video-list__number">Day 30</span>
+                    <ul class="tags">
+                        <li class="tags__item tags__item--1">DOM &amp; Interface</li>
+                        <li class="tags__item tags__item--3">Friends with CSS</li>
+                        <li class="tags__item tags__item--6">Fun + Experimental</li>
+                    </ul>
+                </li>
+                <li class="video-list__item 💩💩💩"></li>
+                <li class="video-list__item 💩💩💩"></li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
