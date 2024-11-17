@@ -9,7 +9,7 @@ JavaScirpt30 是 [Wes Bos](https://github.com/wesbos/JavaScript30) 推出的一�
 ## 对应文章和案例效果
 | No   | 语雀地址                                                     | 案例效果                                                     |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 1    | [**打击鼓**](https://www.yuque.com/webproejcts/article/bmxxu3o1geardhla) | [在线效果](https://a-aronyang.github.io/JavaScript30/static/pages/day01%20Drum%20Kit/index.html) |
+| 1    | [**打击鼓**](https://www.yuque.com/webproejcts/article/bmxxu3o1geardhla) | [在线效果](https://a-aronyang.github.io/JavaScript30/static/pages/day01%20JavaScript%20Drum%20Kit/index.html) |
 | 2    | [**JS 和 CSS 时钟**](https://www.yuque.com/webproejcts/article/naq5ourmihgclzef) | [在线效果](https://a-aronyang.github.io/JavaScript30/static/pages/day02%20JS%20and%20CSS%20Clock/index.html) |
 | 3    | [**用 JS 控制 CSS 变量**](https://www.yuque.com/webproejcts/article/yeeofbfll5zmi2vo) | [在线效果](https://a-aronyang.github.io/JavaScript30/static/pages/day03%20CSS%20Variables/index.html) |
 | 4    | [**数组训练 Day1**](https://www.yuque.com/webproejcts/article/fdxfu6vbf0vc4zix) | [在线效果](https://a-aronyang.github.io/JavaScript30/static/pages/day04%20Array%20Cardio%20Day%201/index.html) |
