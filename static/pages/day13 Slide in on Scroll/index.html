@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="icon" href="https://fav.farm/✅" />
-    
+    <link rel="icon" href="https://fav.farm/🔥" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="site-wrap">
@@ -222,7 +223,6 @@
         facere ducimus accusantium eos veritatis neque.
       </p>
     </div>
-
     <script>
       function debounce(func, wait = 20, immediate = true) {
         var timeout;
@@ -239,27 +239,21 @@
           if (callNow) func.apply(context, args);
         };
       }
-
-      const sliderImages = document.querySelectorAll(".slide-in");
-
-      function checkSlide() {
-        sliderImages.forEach((sliderImage) => {
-          // half way through the image
-          const slideInAt =
-            window.scrollY + window.innerHeight - sliderImage.height / 2;
-          // bottom of the image
-          const imageBottom = sliderImage.offsetTop + sliderImage.height;
-          const isHalfShown = slideInAt > sliderImage.offsetTop;
-          const isNotScrolledPast = window.scrollY < imageBottom;
-          if (isHalfShown && isNotScrolledPast) {
-            sliderImage.classList.add("active");
+      const imgEls = document.querySelectorAll("img");
+      document.addEventListener("scroll", checkSlide);
+      function checkSlide(e) {
+        const windowTop = window.scrollY;
+        const windowBottom = windowTop + window.innerHeight;
+        
+        imgEls.forEach((img) => {
+          let imgMiddle = img.offsetTop + img.height / 2;
+          if (imgMiddle < windowBottom && imgMiddle > windowTop) {
+            img.classList.add("active");
           } else {
-            sliderImage.classList.remove("active");
+            img.classList.remove("active");
           }
         });
       }
-
-      window.addEventListener("scroll", debounce(checkSlide));
     </script>
   </body>
 </html>
