@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Array Cardio 💪💪</title>
+    <link rel="icon" href="https://fav.farm/🔥" />
+  </head>
+  <body>
+    <p><em>悄悄提示：查看 JavaScript 控制台</em> 💁</p>
+    <script>
+      // ## 数组练习 第2天
+
+      const people = [
+        { name: "Wes", year: 1988 },
+        { name: "Kait", year: 1986 },
+        { name: "Irv", year: 1970 },
+        { name: "Lux", year: 2015 },
+      ];
+
+      const comments = [
+        { text: "喜欢这个!", id: 523423 },
+        { text: "超级好", id: 823423 },
+        { text: "你是最棒的", id: 2039842 },
+        { text: "拉面是我最喜欢的食物", id: 123523 },
+        { text: "好极了！", id: 542328 },
+      ];
+
+      // 检查是否满足某些条件和全部条件
+      // Array.prototype.some() // 是否至少有一个人年满19岁？
+      // Array.prototype.every() // 是否所有人都年满19岁？
+      const isAdult = people.some((person) => {
+        const currentYear = new Date().getFullYear();
+        return currentYear - person.year >= 19;
+      });
+      const allAdults = people.every((person) => {
+        const currentYear = new Date().getFullYear();
+        return currentYear - person.year >= 19;
+      });
+
+      // Array.prototype.find()
+      // Find 类似于 filter，但返回的是你寻找的第一个匹配项
+      // 查找 ID 为 823423 的评论
+      const comment = comments.find(function (comment) {
+        return comment.id === 823423;
+      });
+
+      // Array.prototype.findIndex()
+      // 查找具有该 ID 的评论
+      // 删除 ID 为 823423 的评论
+
+      const index = comments.findIndex(function(comment) {
+        return comment.id === 823423;
+      });
+      comments.splice(index, 1);
+    </script>
+  </body>
+</html>

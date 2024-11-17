@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Reference VS Copy</title>
+    <link rel="icon" href="https://fav.farm/🔥" />
+  </head>
+  <body>
+    <script>
+      // 从字符串、数字和布尔值开始
+      let name = 'Aaron'
+      let age = 18
+      let isFunny = false
+
+      let name2 = name
+      let age2 = age
+      let isFunny2 = isFunny
+      name = 'Bob'
+      age = 100
+      isFunny = true
+      console.log(name2, age2, isFunny2)
+      // 假设我们有一个数组
+      const players = ["Wes", "Sarah", "Ryan", "Poppy"];
+
+      // 我们想要复制它。
+      const team = players;
+
+      console.log(players, team);
+      // 你可能会认为我们可以这么做：
+      team[3] = "Lux";
+      // 但是当我们更新这个数组时会发生什么呢？
+
+      // 现在问题来了！
+
+      // 哦不 - 我们也修改了原始数组！
+
+      // 为什么？因为这是一个数组引用，而不是数组的拷贝。它们都指向同一个数组！
+
+      // 那么我们怎么解决这个问题呢？我们应该复制一份！
+      const team2 = players.slice();
+      // 一种方法是
+
+      // 或者创建一个新的数组，并将旧的数组合并进来
+      const team3 = [].concat(players);
+      // 或者使用新的 ES6 展开运算符
+      const team4 = [...players];
+      team4[3] = "heeee hawww";
+      console.log(team4);
+
+      const team5 = Array.from(players);
+      // 现在当我们更新它时，原始数组不会改变
+
+      // 对于对象也是一样的，假设我们有一个 person 对象
+
+      // 对象的情况
+      const person = {
+        name: "Wes Bos",
+        age: 80,
+      };
+
+      // 然后我们认为我们做了一个拷贝：
+
+      // 那我们怎么做拷贝呢？
+      const cap2 = Object.assign({}, person, { number: 99, age: 12 });
+      console.log(cap2);
+      // 我们很快就会看到对象的...展开运算符
+
+      // 需要注意的是 - 这种拷贝只会进行 1 层深拷贝 - 对数组和对象都适用。lodash 提供了一个 `cloneDeep` 方法，但在使用之前需要三思而后行。
+      const wes = {
+        name: "Wes",
+        age: 100,
+        social: {
+          twitter: "@wesbos",
+          facebook: "wesbos.developer",
+        },
+      };
+
+      console.clear();
+      console.log(wes);
+
+      const dev = Object.assign({}, wes);
+
+      const dev2 = JSON.parse(JSON.stringify(wes));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Scoped CSS Variables and JS</title>
+  <link rel="icon" href="https://fav.farm/✅" />
+</head>
+
+<style>
+  /*
+    misc styles, nothing to do with CSS variables
+  */
+  :root {
+    --base: #a75fce;
+    --spacing: 10px;
+    --blur: 10px;
+  }
+
+  img {
+    padding: var(--spacing);
+    background-color: var(--base);
+    filter: blur(var(--blur));
+  }
+
+  .hl {
+    color: var(--base);
+  }
+
+  h2 {
+    margin: 20px;
+    font-size: 40px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    text-align: center;
+    background: #193549;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    overflow: hidden;
+  }
+
+  .controls {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
+
+  input {
+    width: 100px;
+  }
+
+  img {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+  }
+</style>
+
+<body>
+  <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
+
+  <div class="controls">
+    <label for="spacing">Spacing:</label>
+    <input id="spacing" type="range" name="spacing" min="10" max="100" value="10" data-sizing="px">
+
+    <label for="blur">Blur:</label>
+    <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+    <label for="base">Base Color</label>
+    <input id="base" type="color" name="base" value="#a75fce">
+  </div>
+
+  <img src="https://s3.bmp.ovh/imgs/2023/03/24/f298f855adf894f7.jpg">
+
+  <script>
+    function changeHandler() {
+
+      let suffix = this.dataset.sizing || ''
+      document.querySelector(':root').style.setProperty(`--${this.name}`, this.value + suffix)
+
+    }
+
+    let inputs = document.querySelectorAll('.controls input');
+    inputs.forEach((item) => {
+      item.addEventListener("change", changeHandler)
+      item.addEventListener("mousemove", changeHandler)
+    })
+  </script>
+
+</body>
+
+</html>
